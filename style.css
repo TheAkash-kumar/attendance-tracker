@@ -1,0 +1,322 @@
+:root{
+    /* --background: #1A1D24; */
+    --background:#ffffff;
+    --sky-blue-text:#119089;
+   
+    --change-color:#19485f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fefefe;
+    color: #000000;
+    font-family: "Lobster Two", sans-serif;
+
+}
+
+/* ------------------------------nav-bar------------------------------ */
+.nav-img{
+    height: 3rem;
+}
+.nav-img{
+    /* border-radius: 50%; */
+    height: 2rem;
+}
+#user-img:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+.nav-bar {
+    background-color:var(--background);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
+}
+
+/* ------------------------------profile-section------------------------------ */
+#main-container, .sub-container, .sub-sub-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+#main-container{
+    gap: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+    margin: 10px auto;
+}
+.sub-container{
+    gap: 5px;
+}
+.sub-sub-container{
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.profile-section-header{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--change-color);
+    font-weight: 650;
+    
+}
+.edit-profile-detail-value-btn{
+    border: none;
+}
+.edit-profile-detail-value-btn:hover {
+    cursor: pointer;
+}
+.edit-logo{
+    height: 25px;
+    border-radius: 50%;
+}
+/* .edit-logo:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.2s;
+} */
+.profile-detail-property{
+    font-size: 1.5rem;
+}
+.profile-detail-value{
+    font-size: 2rem;
+    color: var(--sky-blue-text);
+    
+}
+#reset-profile-btn {
+    display: flex;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+/* ------------------------------hero-section------------------------------ */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width:500px;
+    width: 90%;
+    margin: 15px auto;
+
+}
+#app-name{
+    font-size: 3rem;
+    color: var(--change-color);
+    text-align: center;
+}
+#wlcm-msg{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.home-heading{
+    font-size: 2.5rem;
+    color: var(--change-color);
+    text-align: center;
+}
+.chart-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#overall-chart{
+    width: 18rem;
+    height: 18rem;
+    /* background-color: #fff; */
+   
+}
+/* ------------------------------main-body-sub-section------------------------------ */
+.subject-section{
+    max-width: 500px;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.subjects-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.subjects-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.sub-name{
+    font-size: 1.6rem;
+}
+.home-sub-btn{
+    border: none;
+}
+.sub-btn-img{
+    height: 2rem;
+    border-radius: 50%;
+    padding:0px ;
+    margin-top: 5px
+}
+.sub-btn-img:hover{
+    cursor: pointer;
+}
+   
+/* ----------------------------main body added---------------- */
+.subjects-details{
+    width: 100%;
+    position: relative;
+}
+.sub-record{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.sub-record-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 10px;
+    place-items: center;
+    padding: 10px 5px;
+
+}
+
+.label{
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.js-present-count{
+    border: 1px solid #4CAF50;
+}
+.js-absent-count{
+    border: 1px solid #F44336;
+}
+.present-label{
+    background-color: #4CAF50;
+    color: #fefefe;
+    border: none;
+}
+.absent-label{
+    background-color: #F44336;
+    color: #fefefe;
+    border: none;
+}
+
+.subject-total{
+    font-size: 1.5rem;
+    padding: 5px;
+    
+} 
+.edit-sub-name{
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    border: none;
+}
+.edit-sub-name:hover{
+    cursor: pointer;
+}
+.bottom-btn-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    
+    
+}
+.reset-btn,
+.delete-ind-sub-btn{
+    padding: 5px;
+    border: 1px solid red;
+    color: red;
+    background-color: #fefefe;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.add-sub-btn{
+    display: inline-block;
+    max-width: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6rem;
+    border: none;
+    background-color: rgb(24, 13, 177);
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 10px;
+    transform: translate(6%, 0%);
+}
+/* ------------------------------footer-section------------------------------ */
+
+.footer{
+    margin-bottom: 80px;
+    padding: 10px;
+    max-width: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto 80px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+}
+.social-media-links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+.footer-para{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--change-color);
+}
+.social-media-logo{
+    height: 2rem;
+    border-radius: 50%;
+}
+.social-media-logo:hover{
+    box-shadow: 0px 0px 20px var(--sky-blue-text);
+}
+
+@media (min-width:500px) {
+    body {
+        width:450px;
+        border-radius:10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        padding:15px 0px;
+        margin: 0px auto;
+    }
+    .nav-bar{
+        width:450px;
+        box-shadow:0px 0px 2px rgba(0,0,0,0.2)
+    }
+    
+}
